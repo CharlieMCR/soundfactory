@@ -1,4 +1,5 @@
 body {
+<<<<<<< HEAD
   font: 16px/1.4em 'Arial', sans-serif;
   color: #533; }
   body p,
@@ -152,3 +153,116 @@ form input[type="submit"] {
   padding: 14px; }
 
 /*# sourceMappingURL=style.css.map */
+=======
+    background-color: #dde;
+    font-family: Avenir, Arial, Verdanna, sans-serif;
+    font-size: 16px;
+    color: #533;
+    font-weight: 300;
+}
+
+.container-fluid{
+    margin-right:auto;
+    margin-left:auto;
+    padding-left:15px;
+    padding-right:15px
+}
+
+.navbar {
+	color: #ccc;
+	background-color: #533;
+    margin: 0px 10px;
+    border-radius: 7px;
+    -moz-border-radius: 7px; 
+    -webkit-border-radius: 7px; 
+}
+
+.navbar-brand {
+ 	color: #ccc;
+	background-color: #533;
+    font-size: 24px;
+	font-weight: strong;/*
+    border-radius: 7px;
+    -moz-border-radius: 7px; 
+    -webkit-border-radius: 7px;  */ 
+}
+
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+    color: #dde;
+    background-color: #533;
+}
+
+/*.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+background-color: #533;
+}*/
+
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+background-color: #533;
+}
+
+.navbar-nav {
+    float: right;
+}
+
+.navbar-inverse .navbar-brand {
+color: #dde;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #dde;
+    margin-top: 8px;
+    margin-right: 1px;
+    margin-left: 1px;
+    padding: 8px;
+    border-radius: 7px
+}
+
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+color: #dde;
+background-color: #988;
+}
+
+/*.navbar li a.active,
+.navbar li a:hover {
+    background-color: #988;
+}    
+
+   #main_nav li a.active,
+	#main_nav li a:hover {
+	background-color: #988;
+}*/
+
+h1 {
+	color: #533;
+	background-color: #ccc;
+	font-size: initial;
+	font-weight: 700;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 7px;
+    -moz-border-radius: 7px; 
+    -webkit-border-radius: 7px;
+}
+/*
+#main_nav{
+	position: absolute; right: 30px; top: 20px;
+	list-style-type: none;
+}
+	#main_nav li {
+	float: left; 
+    margin: -2px; 
+}
+	#main_nav li a {
+	font-size: 16px;
+    color: #ccc; 
+    text-decoration: none; 
+    padding: 8px 15px;
+    border-radius: 7px; 
+    -moz-border-radius: 7px; 
+    -webkit-border-radius: 7px;
+}
+	#main_nav li a.active,
+	#main_nav li a:hover {
+	background-color: #988;
+}*/
+>>>>>>> 98a3e72e6e87136a2686f70c1a7c6f3387782d07
