@@ -1,6 +1,6 @@
 RewriteEngine On
-RewriteRule ^catalog/$ /soundfactory/catalog/catalog.php
-RewriteRule ^catalog/([0-9]+)/$ /soundfactory/catalog/product.php?id=$1
+RewriteRule ^catalog/$ /catalog/catalog.php
+RewriteRule ^catalog/([0-9]+)/$ /catalog/product.php?id=$1
 RewriteRule ^receipt.php$ /receipt/ [R=301]
 RewriteRule ^contact.php$ /contact/ [R=301]
 RewriteRule ^shirts.php$ /shirts/ [R=301]
