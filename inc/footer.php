@@ -11,7 +11,7 @@
                 <li class="about <?php if ($section == "about") { echo "on"; } ?>"><a href="<?php echo BASE_URL; ?>about/">About</a></li>
                 <li class="catalog <?php if ($section == "catalog") { echo "on"; } ?>"><a href="<?php echo BASE_URL; ?>catalog/">Catalog</a></li>
                 <li><a href="#" id="contact">Contact</a></li>
-                <li><a href="">Top</a></li>
+                <li><a href="#home" id="top">Top</a></li>
             </ul>
 
         </nav>

@@ -47,11 +47,11 @@ include(ROOT_PATH . 'inc/header.php'); ?>
 // exit;
 ?>-->
 
-		<div class="section shirts page">
+		<div class="section">
 
 			<div class="wrapper">
 
-				<h1>Soundfactories' product listing</h1>
+				<h2>Soundfactories' product listing</h2>
 
 				<?php include(ROOT_PATH . "inc/partial-list-navigation.html.php") ?>
 
