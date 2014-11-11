@@ -83,20 +83,20 @@ body {
       color: #533;
       padding: 0 10px;
       font-size: 1.2em; }
-  .wrapper .product-details form {
-    width: 90%;
-    margin: 5% auto; }
-    .wrapper .product-details form label {
-      padding: 10px 20px;
-      font-weight: bold;
-      margin: 10px auto; }
-    .wrapper .product-details form select {
-      width: 100%;
-      font-size: 100%;
-      margin: 20px auto; }
+  .wrapper .product-details label {
+    margin-top: 20px;
+    font-weight: bold;
+    display: block;
+    text-align: center; }
+  .wrapper .product-details select {
+    width: 100%; }
   .wrapper .product-details p {
-    margin-top: 30px;
-    padding: 1em; }
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 1em 0; }
+  .wrapper .product-details .note {
+    font-size: 0.8em; }
   @media screen and (min-width: 768px) {
     .wrapper .product-details {
       width: 46%;
@@ -210,29 +210,45 @@ footer {
 
 .contact {
   width: 100%;
-  display: none;
+  padding: 10px -5px;
+  margin: 10px auto;
   background: #533;
-  color: #ccc; }
-  .contact table {
-    margin: 0 auto; }
-  .contact input {
-    width: 100%; }
-
-form input[type="submit"] {
-  display: block;
-  margin: 30px auto;
-  width: 100%;
+  color: #ccc;
   text-align: center;
-  background: #ccc;
-  color: #533;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
-  font-size: 14px;
-  text-transform: uppercase;
-  padding: 14px; }
-  @media screen and (min-width: 768px) {
-    form input[type="submit"] {
-      margin: 50px auto; } }
+  font-size: 1.4em; }
+  .contact input {
+    margin: 15px auto;
+    width: 90%;
+    color: #533;
+    background: #e6e6e6;
+    font-size: inherit;
+    padding: 2%;
+    font-size: 16px; }
+  .contact button {
+    margin: 15px auto;
+    width: 90%;
+    color: #533;
+    background: #e6e6e6;
+    font-size: inherit;
+    padding: 2%;
+    padding: 20px 40px;
+    text-align: inherit;
+    border: 1px solid #d8d8d8;
+    border-width: 1px 1px 3px; }
+  .contact label {
+    display: block;
+    margin: 8px auto;
+    font-size: 1.2em; }
+    .contact label:first-child {
+      padding-top: 30px; }
+  .contact textarea#message {
+    margin: 15px auto;
+    width: 90%;
+    color: #533;
+    background: #e6e6e6;
+    font-size: inherit;
+    padding: 2%;
+    height: 100px; }
 
 #overlay {
   background: rgba(0, 0, 0, 0.7);

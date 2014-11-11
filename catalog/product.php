@@ -25,16 +25,12 @@
 
 					<h1><span class="price">$<?php echo $product["price"]; ?></span> <?php echo $product["name"]; ?></h1>
 
-					<form method="get" target="http://lorempixel.com/">
-
 						<label for="size">Size</label>
 						<select name="200" id="size">
 							<?php foreach($product["sizes"] as $size) { ?>
 							<option value="<?php echo 'http://lorempixel.com/' . $size . '/' . $size . '/' . $product["img"]; ?>"><?php echo $size; ?> </option>
 							<?php } ?>
 						</select>
-
-					</form>
 
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
