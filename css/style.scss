@@ -285,7 +285,9 @@ footer {
 
 
 .contact {
-    // display: none;
+    position: absolute;
+    top: 0;
+    display: none;
     width: 100%;
     padding: 10px -5px;
     margin: 10px auto;
@@ -310,12 +312,25 @@ footer {
         margin: 8px auto;
         font-size: 1.2em;
         &:first-child {
-        padding-top: 30px;
+        padding-top: 20px;
         }
     }
     textarea#message {
         @include contact_input;
         height: 100px;
+    }
+    p {
+        text-align: right;
+        padding: 5px 15px;
+        font-size: 1.4em;
+        margin: 0;
+    }
+    span {
+        text-align: center;
+        display: block;
+        background: $light;
+        color: $dark;
+        padding: 15px;
     }
 }
 

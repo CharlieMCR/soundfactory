@@ -17,6 +17,7 @@
         </nav>
 
         <form  class="contact" method="post" action="#">
+            <p id="cancel">x</p>
             <label for="name">Name</label>
             <input type="text" name="name" id="name" value="<?php if (isset($name)) { echo htmlspecialchars($name); } ?>">
             <label for="email">Email</label>
@@ -28,7 +29,7 @@
                 <input type="text" name="address" id="address">
                 <p>Humans (and frogs): please leave this field blank.</p>
             </div>
-            <button type="submit">Send</button>
+            <button type="submit" id="send">Send</button>
 
         </form>
     </div>

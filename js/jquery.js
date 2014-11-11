@@ -1,8 +1,41 @@
-// $(".contact").hide();
+//contact form styling and validation
+
 $('#contact').click(function() {
 	$('.contact').show();
 });
+$('#cancel').click(function() {
+	$('.contact').hide();
+});
 
+$("#send").click(function(event) {
+	var name = $("#name").val();
+	var email = $("#email").val();
+	var message = $("#message").val();
+	var $fillError = "<span>Please fill all fields.</span>";
+	var $emailError = '<span>Please enter a valid email address.</span>';
+	if (name === "" || email === "" || message === ""){
+		event.preventDefault();
+		$('form span').hide();
+		$('#cancel').append($fillError);
+	}	else if (validateEmail(email)) {
+		event.submit();
+		$('form span').hide();
+		$(".contact").hide();
+	}	else {
+		event.preventDefault();
+		$('form span').hide();
+		$('#cancel').append($emailError);
+	}
+});
+
+function validateEmail(email) {
+	var filter = /^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/;
+	if (filter.test(email)) {
+	return true;
+	}	else {
+	return false;
+	}
+}
 
 //select box to change the size of the image in light box.
 var $overlay = $('<div id="overlay"></div>');
@@ -30,4 +63,3 @@ $overlay.click(function() {
   $overlay.hide();
 });
 
-//contact form styling and validation
