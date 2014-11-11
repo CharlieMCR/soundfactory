@@ -9,7 +9,7 @@ include(ROOT_PATH . 'inc/header.php'); ?>
         <article>
             <h2>About Soundfactory Development</h2>
 
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>This is a dummy catalogue site using images from <a href="http://lorempixel.com/">Lorempixel.com</a> as a base for an arrayed catalog constructed in php. With dummy jquery contact form.</p>
 
         </article>
 

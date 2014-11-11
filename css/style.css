@@ -1,23 +1,83 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0b1 | 201101 
+   NOTE: WORK IN PROGRESS
+   USE WITH CAUTION AND TEST WITH ABANDON */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+/* remember to highlight inserts somehow! */
+ins {
+  text-decoration: none; }
+
+del {
+  text-decoration: line-through; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.section:after {
+  content: "";
+  display: table;
+  clear: both; }
+
 body {
   font: 0.8em 'Arial', sans-serif;
   color: #533; }
-body p, body ul {
-  margin: 0 0 1.5em; }
-body ul {
-  list-style: none;
-  padding: 50 0 0 20px; }
-body a {
-  color: #533; }
-body h1 {
-  font-size: 2em; }
-body h2 {
-  font-size: 1.75em;
-  line-height: 1.4em;
-  margin: 0 0 .4em;
-  font-weight: bold; }
-@media screen and (min-width: 768px) {
+  body p,
+  body ul {
+    margin: 0 0 1.5em; }
+  body ul {
+    list-style: none;
+    padding: 50 0 0 20px; }
+  body a {
+    color: #533; }
+  body h1 {
+    font-size: 2em; }
   body h2 {
-    font-size: 2em; } }
+    font-size: 1.75em;
+    line-height: 1.4em;
+    margin: 0 0 .4em;
+    font-weight: bold; }
+    @media screen and (min-width: 768px) {
+      body h2 {
+        font-size: 2em; } }
 
 /*layout*/
 .wrapper article {
@@ -27,35 +87,35 @@ body h2 {
 .wrapper .pagination {
   text-align: right;
   margin: 1em 0; }
-.wrapper .pagination span, .wrapper .pagination a {
-  padding: 5px 15px;
-  border: 1px solid #ccc; }
-.wrapper .pagination span {
-  background: #ccc;
-  border-color: #533;
-  color: #533; }
-.wrapper .pagination a {
-  display: inline-block; }
+  .wrapper .pagination span, .wrapper .pagination a {
+    padding: 5px 15px;
+    border: 1px solid #ccc; }
+  .wrapper .pagination span {
+    background: #ccc;
+    border-color: #533;
+    color: #533; }
+  .wrapper .pagination a {
+    display: inline-block; }
 .wrapper .products {
   width: 100%; }
-.wrapper .products li {
-  display: inline-block;
-  border: 1px solid #533;
-  border-radius: 2px;
-  width: 40%;
-  text-align: center;
-  padding: 2%;
-  background: #fff;
-  margin: 0 0 3% 2%;
-  position: relative; }
-@media screen and (min-width: 768px) {
   .wrapper .products li {
-    width: 18%; } }
-.wrapper .products a {
-  display: block;
-  padding: 30px 0 10px; }
-.wrapper .products img {
-  width: 100%; }
+    display: inline-block;
+    border: 1px solid #533;
+    border-radius: 2px;
+    width: 40%;
+    text-align: center;
+    padding: 2%;
+    background: #fff;
+    margin: 0 0 3% 2%;
+    position: relative; }
+    @media screen and (min-width: 768px) {
+      .wrapper .products li {
+        width: 18%; } }
+  .wrapper .products a {
+    display: block;
+    padding: 30px 0 10px; }
+  .wrapper .products img {
+    width: 100%; }
 .wrapper .breadcrumb {
   padding: 14px 0 48px; }
 .wrapper .product-picture {
@@ -63,43 +123,43 @@ body h2 {
   padding: 14px;
   background: #ccc;
   text-align: center; }
-.wrapper .product-picture span {
-  display: block;
-  width: 100%;
-  padding: 36px 0 61px;
-  background: #fff; }
-.wrapper .product-picture span img {
-  width: 292px; }
-@media screen and (min-width: 768px) {
-  .wrapper .product-picture {
-    width: 46%;
-    float: left; } }
+  .wrapper .product-picture span {
+    display: block;
+    width: 100%;
+    padding: 36px 0 61px;
+    background: #fff; }
+    .wrapper .product-picture span img {
+      width: 292px; }
+  @media screen and (min-width: 768px) {
+    .wrapper .product-picture {
+      width: 46%;
+      float: left; } }
 .wrapper .product-details {
   width: 90%; }
-.wrapper .product-details h1 {
-  text-align: left; }
-.wrapper .product-details h1 .price {
-  color: #533;
-  padding: 0 10px;
-  font-size: 1.2em; }
-.wrapper .product-details label {
-  margin-top: 20px;
-  font-weight: bold;
-  display: block;
-  text-align: center; }
-.wrapper .product-details select {
-  width: 100%; }
-.wrapper .product-details p {
-  width: 90%;
-  margin: 0 auto;
-  margin-top: 20px;
-  padding: 1em 0; }
-.wrapper .product-details .note {
-  font-size: 0.8em; }
-@media screen and (min-width: 768px) {
-  .wrapper .product-details {
-    width: 46%;
-    float: right; } }
+  .wrapper .product-details h1 {
+    text-align: left; }
+    .wrapper .product-details h1 .price {
+      color: #533;
+      padding: 0 10px;
+      font-size: 1.2em; }
+  .wrapper .product-details label {
+    margin-top: 20px;
+    font-weight: bold;
+    display: block;
+    text-align: center; }
+  .wrapper .product-details select {
+    width: 100%; }
+  .wrapper .product-details p {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 1em 0; }
+  .wrapper .product-details .note {
+    font-size: 0.8em; }
+  @media screen and (min-width: 768px) {
+    .wrapper .product-details {
+      width: 46%;
+      float: right; } }
 @media only screen and (min-width: 768px) {
   .wrapper {
     position: relative;
@@ -112,7 +172,8 @@ header {
   padding: 15px 20px; }
 
 /*shorter clearfix http://nicolasgallagher.com/micro-clearfix-hack/*/
-header:before, header:after {
+header:before,
+header:after {
   content: "";
   display: table; }
 
@@ -146,12 +207,12 @@ a.to_nav {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px; }
-a.to_nav:hover, a.to_nav:focus {
-  color: #ccc;
-  background: #533; }
-@media screen and (min-width: 768px) {
-  a.to_nav {
-    display: none; } }
+  a.to_nav:hover, a.to_nav:focus {
+    color: #ccc;
+    background: #533; }
+  @media screen and (min-width: 768px) {
+    a.to_nav {
+      display: none; } }
 
 /*navigation*/
 #primary_nav ul {
@@ -161,8 +222,8 @@ a.to_nav:hover, a.to_nav:focus {
 @media screen and (min-width: 768px) {
   #primary_nav li {
     display: inline; }
-  #primary_nav li #top {
-    display: none; } }
+    #primary_nav li #top {
+      display: none; } }
 #primary_nav li a {
   display: block;
   padding: 0 10px;
@@ -173,19 +234,19 @@ a.to_nav:hover, a.to_nav:focus {
   letter-spacing: 0.1em;
   line-height: 2.5em;
   border-bottom: 1px solid #383838; }
-#primary_nav li a:hover, #primary_nav li a:focus {
-  color: #1c1c1c;
-  background: #ccc; }
-#primary_nav li a.on {
-  text-decoration: underline; }
-@media screen and (min-width: 768px) {
-  #primary_nav li a {
-    float: left;
-    border: none;
-    padding: 0 10px;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px; } }
+  #primary_nav li a:hover, #primary_nav li a:focus {
+    color: #1c1c1c;
+    background: #ccc; }
+  #primary_nav li a.on {
+    text-decoration: underline; }
+  @media screen and (min-width: 768px) {
+    #primary_nav li a {
+      float: left;
+      border: none;
+      padding: 0 10px;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      border-radius: 2px; } }
 #primary_nav li:last-child a {
   border-bottom: none; }
 @media screen and (min-width: 768px) {
@@ -217,50 +278,50 @@ footer {
   color: #ccc;
   text-align: center;
   font-size: 1.4em; }
-.contact input {
-  margin: 15px auto;
-  width: 90%;
-  color: #533;
-  background: #e6e6e6;
-  font-size: inherit;
-  padding: 2%;
-  font-size: 16px; }
-.contact button {
-  margin: 15px auto;
-  width: 90%;
-  color: #533;
-  background: #e6e6e6;
-  font-size: inherit;
-  padding: 2%;
-  padding: 20px 40px;
-  text-align: inherit;
-  border: 1px solid #d8d8d8;
-  border-width: 1px 1px 3px; }
-.contact label {
-  display: block;
-  margin: 8px auto;
-  font-size: 1.2em; }
-.contact label:first-child {
-  padding-top: 20px; }
-.contact textarea#message {
-  margin: 15px auto;
-  width: 90%;
-  color: #533;
-  background: #e6e6e6;
-  font-size: inherit;
-  padding: 2%;
-  height: 100px; }
-.contact p {
-  text-align: right;
-  padding: 5px 15px;
-  font-size: 1.4em;
-  margin: 0; }
-.contact span {
-  text-align: center;
-  display: block;
-  background: #ccc;
-  color: #533;
-  padding: 15px; }
+  .contact input {
+    margin: 15px auto;
+    width: 90%;
+    color: #533;
+    background: #e6e6e6;
+    font-size: inherit;
+    padding: 2%;
+    font-size: 16px; }
+  .contact button {
+    margin: 15px auto;
+    width: 90%;
+    color: #533;
+    background: #e6e6e6;
+    font-size: inherit;
+    padding: 2%;
+    padding: 20px 40px;
+    text-align: inherit;
+    border: 1px solid #d8d8d8;
+    border-width: 1px 1px 3px; }
+  .contact label {
+    display: block;
+    margin: 8px auto;
+    font-size: 1.2em; }
+    .contact label:first-child {
+      padding-top: 20px; }
+  .contact textarea#message {
+    margin: 15px auto;
+    width: 90%;
+    color: #533;
+    background: #e6e6e6;
+    font-size: inherit;
+    padding: 2%;
+    height: 100px; }
+  .contact p {
+    text-align: right;
+    padding: 5px 15px;
+    font-size: 1.4em;
+    margin: 0; }
+  .contact span {
+    text-align: center;
+    display: block;
+    background: #ccc;
+    color: #533;
+    padding: 15px; }
 
 #overlay {
   background: rgba(0, 0, 0, 0.7);
@@ -271,17 +332,17 @@ footer {
   left: 0;
   display: none;
   text-align: center; }
-#overlay img {
-  margin-top: 10%; }
-#overlay p {
-  color: #fff; }
-#overlay p#close {
-  width: 20px;
-  height: 20px;
-  padding: 10px;
-  font-size: 3em;
-  margin-top: 10%;
-  background: #533;
-  border-radius: 100%; }
+  #overlay img {
+    margin-top: 10%; }
+  #overlay p {
+    color: #fff; }
+    #overlay p#close {
+      width: 20px;
+      height: 20px;
+      padding: 10px;
+      font-size: 3em;
+      margin-top: 10%;
+      background: #533;
+      border-radius: 100%; }
 
 /*# sourceMappingURL=style.css.map */
