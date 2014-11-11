@@ -51,7 +51,7 @@ include(ROOT_PATH . 'inc/header.php'); ?>
 
 			<div class="wrapper">
 
-				<h2>Soundfactories' product listing</h2>
+				<h2>Soundfactory Catalog</h2>
 
 				<?php include(ROOT_PATH . "inc/partial-list-navigation.html.php") ?>
 

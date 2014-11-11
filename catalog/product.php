@@ -12,41 +12,39 @@
 
 			<div class="wrapper">
 
-				<div class="breadcrumb"><a href="<?php echo BASE_URL; ?>shirts/">Shirts</a> &gt; <?php echo $product["name"]; ?></div>
+				<div class="breadcrumb"><a href="<?php echo BASE_URL; ?>catalog/">Catalog</a> &gt; <?php echo $product["name"]; ?></div>
 
-				<div class="shirt-picture">
+				<div class="product-picture">
 					<span>
-						<img src="<?php echo BASE_URL . $product["img"]; ?>" alt="<?php echo $product["name"]; ?>">
+						<a href="<?php echo IMG_URL . $product["img"]; ?>">
+						<img src="<?php echo IMG_URL . $product["img"]; ?>" alt="<?php echo $product["name"]; ?>"></a>
 					</span>
 				</div>
 
-				<div class="shirt-details">
+				<div class="product-details">
 
 					<h1><span class="price">$<?php echo $product["price"]; ?></span> <?php echo $product["name"]; ?></h1>
 
-					<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-						<input type="hidden" name="cmd" value="_s-xclick">
-						<input type="hidden" name="hosted_button_id" value="<?php echo $product["paypal"]; ?>">
-						<input type="hidden" name="item_name" value="<?php echo $product["name"]; ?>">
-						<table>
-						<tr>
-							<th>
-								<input type="hidden" name="on0" value="Size">
-								<label for="os0">Size</label>
-							</th>
-							<td>
-								<select name="os0" id="os0">
-									<?php foreach($product["sizes"] as $size) { ?>
-									<option value="<?php echo $size; ?>"><?php echo $size; ?> </option>
-									<?php } ?>
-								</select>
-							</td>
-						</tr>
-						</table>
-						<input type="submit" value="Add to Cart" name="submit">
+					<form method="get" target="http://lorempixel.com/">
+
+						<label for="size">Size</label>
+						<select name="200" id="size">
+							<?php foreach($product["sizes"] as $size) { ?>
+							<option value="<?php echo 'http://lorempixel.com/' . $size . '/' . $size . '/' . $product["img"]; ?>"><?php echo $size; ?> </option>
+							<?php } ?>
+						</select>
+
 					</form>
 
-					<p class="note-designer">* All shirts are designed by Mike the Frog.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+					<p class="note">* All Images supplied by <a href="http://lorempixel.com/">Lorempixel.com</a></p>
+					<p class="note">** All monetary values are made up.</p>
 
 				</div>
 

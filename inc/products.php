@@ -72,196 +72,196 @@ function get_products_subset($positionStart, $positionEnd)
 function get_products_all() {
     $products = array();
     $products[101] = array(
-        "name" => "Logo Shirt, Red",
-        "img" => "img/101.jpg",
+        "name" => "Abstract Image One",
+        "img" => "abstract/1",
         "price" => 18,
-        "sizes" => array("Small","Medium","Large","X-Large")
+        "sizes" => array("200","400","600","800")
     );
     $products[102] = array(
-        "name" => "Mike the Frog Shirt, Black",
-        "img" => "img/101.jpg",
+        "name" => "Abstract Image Two",
+        "img" => "abstract/2",
         "price" => 20,
-        "sizes" => array("Small","Medium","Large","X-Large")
+        "sizes" => array("200","400","600","800")
     );
     $products[103] = array(
-        "name" => "Mike the Frog Shirt, Blue",
-        "img" => "img/101.jpg",    
+        "name" => "Abstract Image Three",
+        "img" => "abstract/3",    
         "price" => 20,
-        "sizes" => array("Small","Medium","Large","X-Large")
+        "sizes" => array("200","400","600","800")
     );
     $products[104] = array(
-        "name" => "Logo Shirt, Green",
-        "img" => "img/101.jpg",    
+        "name" => "Abstract Image Four",
+        "img" => "abstract/4",    
         "price" => 18,
-        "sizes" => array("Small","Medium","Large","X-Large")
+        "sizes" => array("200","400","600","800")
     );
     $products[105] = array(
-        "name" => "Mike the Frog Shirt, Yellow",
-        "img" => "img/101.jpg",    
+        "name" => "Abstract Image Five",
+        "img" => "abstract/5",    
         "price" => 25,
-        "sizes" => array("Small","Medium","Large","X-Large")
+        "sizes" => array("200","400","600","800")
     );
     $products[106] = array(
-        "name" => "Logo Shirt, Gray",
-        "img" => "img/101.jpg",    
+        "name" => "Abstract Image Six",
+        "img" => "abstract/6",    
         "price" => 20,
-        "sizes" => array("Small","Medium","Large","X-Large")
+        "sizes" => array("200","400","600","800")
     );
     $products[107] = array(
-        "name" => "Logo Shirt, Teal",
-        "img" => "img/101.jpg",    
+        "name" => "Abstract Image Seven",
+        "img" => "abstract/7",    
         "price" => 20,
-        "sizes" => array("Small","Medium","Large","X-Large")
+        "sizes" => array("200","400","600","800")
     );
     $products[108] = array(
-        "name" => "Mike the Frog Shirt, Orange",
-        "img" => "img/101.jpg",    
+        "name" => "Abstract Image Eight",
+        "img" => "abstract/8",    
         "price" => 25,
-        "sizes" => array("Large","X-Large")
+        "sizes" => array("200","400","600","800")
     );
     $products[109] = array(
-            "name" => "Get Coding Shirt, Gray",
-            "img" => "img/101.jpg",    
+            "name" => "Abstract Image Nine",
+            "img" => "abstract/9",    
             "price" => 20,
-            "sizes" => array("Small","Medium","Large","X-Large")
+            "sizes" => array("200","400","600","800")
     );
     $products[110] = array(
-            "name" => "HTML5 Shirt, Orange",
-            "img" => "img/101.jpg",    
+            "name" => "Abstract Image Ten",
+            "img" => "abstract/10",    
             "price" => 22,
-            "sizes" => array("Small","Medium","Large","X-Large")
+            "sizes" => array("200","400","600","800")
     );
     $products[111] = array(
-            "name" => "CSS3 Shirt, Gray",
-            "img" => "img/101.jpg",    
+            "name" => "Animal Image One",
+            "img" => "animals/1",    
             "price" => 22,
-            "sizes" => array("Small","Medium","Large","X-Large")
+            "sizes" => array("200","400","600","800")
     );
     $products[112] = array(
-            "name" => "HTML5 Shirt, Blue",
-            "img" => "img/101.jpg",    
+            "name" => "Animal Image Two",
+            "img" => "animals/2",    
             "price" => 22,
-            "sizes" => array("Small","Medium","Large","X-Large")
+            "sizes" => array("200","400","600","800")
     );
     $products[113] = array(
-            "name" => "CSS3 Shirt, Black",
-            "img" => "img/101.jpg",    
+            "name" => "Animal Image Three",
+            "img" => "animals/3",    
             "price" => 22,
-            "sizes" => array("Small","Medium","Large","X-Large")
+            "sizes" => array("200","400","600","800")
     );
     $products[114] = array(
-            "name" => "PHP Shirt, Yellow",
-            "img" => "img/101.jpg",    
+            "name" => "Animal Image Four",
+            "img" => "animals/4",    
             "price" => 24,
-            "sizes" => array("Small","Medium","Large","X-Large")
+            "sizes" => array("200","400","600","800")
     );
     $products[115] = array(
-            "name" => "PHP Shirt, Purple",
-            "img" => "img/101.jpg",    
+            "name" => "Animal Image Five",
+            "img" => "animals/5",    
             "price" => 24,
-            "sizes" => array("Small","Medium","Large","X-Large")
+            "sizes" => array("200","400","600","800")
     );
     $products[116] = array(
-            "name" => "PHP Shirt, Green",
-            "img" => "img/101.jpg",    
+            "name" => "Animal Image Six",
+            "img" => "animals/6",    
             "price" => 24,
-            "sizes" => array("Small","Medium","Large","X-Large")
+            "sizes" => array("200","400","600","800")
     );
     $products[117] = array(
-            "name" => "Get Coding Shirt, Red",
-            "img" => "img/101.jpg",    
+            "name" => "Animal Image Seven",
+            "img" => "animals/7",    
             "price" => 20,
-            "sizes" => array("Small","Medium","Large","X-Large")
+            "sizes" => array("200","400","600","800")
     );
     $products[118] = array(
-            "name" => "Mike the Frog Shirt, Purple",
-            "img" => "img/101.jpg",    
+            "name" => "Animal Image Eight",
+            "img" => "animals/8",    
             "price" => 25,
-            "sizes" => array("Small","Medium","Large","X-Large")
+            "sizes" => array("200","400","600","800")
     );
     $products[119] = array(
-            "name" => "CSS3 Shirt, Purple",
-            "img" => "img/101.jpg",    
+            "name" => "Animal Image Nine",
+            "img" => "animals/9",    
             "price" => 22,
-            "sizes" => array("Small","Medium","Large","X-Large")
+            "sizes" => array("200","400","600","800")
     );
     $products[120] = array(
-            "name" => "HTML5 Shirt, Red",
-            "img" => "img/101.jpg",    
+            "name" => "Animal Image Ten",
+            "img" => "animals/10",    
             "price" => 22,
-            "sizes" => array("Small","Medium","Large","X-Large")
+            "sizes" => array("200","400","600","800")
     );
     $products[121] = array(
-            "name" => "Get Coding Shirt, Blue",
-            "img" => "img/101.jpg",    
+            "name" => "Business Image One",
+            "img" => "business/1",    
             "price" => 20,
-            "sizes" => array("Small","Medium","Large","X-Large")
+            "sizes" => array("200","400","600","800")
     );
     $products[122] = array(
-            "name" => "PHP Shirt, Gray",
-            "img" => "img/101.jpg",    
+            "name" => "Business Image Two",
+            "img" => "business/2",    
             "price" => 24,
-            "sizes" => array("Small","Medium","Large","X-Large")
+            "sizes" => array("200","400","600","800")
     );
     $products[123] = array(
-            "name" => "Mike the Frog Shirt, Green",
-            "img" => "img/101.jpg",    
+            "name" => "Business Image Three",
+            "img" => "business/3",    
             "price" => 25,
-            "sizes" => array("Small","Medium","Large","X-Large")
+            "sizes" => array("200","400","600","800")
     );
     $products[124] = array(
-            "name" => "Logo Shirt, Yellow",
-            "img" => "img/101.jpg",    
+            "name" => "Business Image Four",
+            "img" => "business/4",    
             "price" => 20,
-            "sizes" => array("Small","Medium","Large","X-Large")
+            "sizes" => array("200","400","600","800")
     );
     $products[125] = array(
-            "name" => "CSS3 Shirt, Blue",
-            "img" => "img/101.jpg",    
+            "name" => "Business Image Five",
+            "img" => "business/5",    
             "price" => 22,
-            "sizes" => array("Small","Medium","Large","X-Large")
+            "sizes" => array("200","400","600","800")
     );
     $products[126] = array(
-            "name" => "Doctype Shirt, Green",
-            "img" => "img/101.jpg",    
+            "name" => "Business Image Six",
+            "img" => "business/6",    
             "price" => 25,
-            "sizes" => array("Small","Medium","Large","X-Large")
+            "sizes" => array("200","400","600","800")
     );
     $products[127] = array(
-            "name" => "Logo Shirt, Purple",
-            "img" => "img/101.jpg",    
+            "name" => "Business Image Seven",
+            "img" => "business/7",    
             "price" => 20,
-            "sizes" => array("Small","Medium","Large","X-Large")
+            "sizes" => array("200","400","600","800")
     );
     $products[128] = array(
-            "name" => "Doctype Shirt, Purple",
-            "img" => "img/101.jpg",    
+            "name" => "Business Image Eight",
+            "img" => "business/8",    
             "price" => 25,
-            "sizes" => array("Small","Medium","Large","X-Large")
+            "sizes" => array("200","400","600","800")
     );
     $products[129] = array(
-            "name" => "Get Coding Shirt, Green",
-            "img" => "img/101.jpg",    
+            "name" => "Business Image Nine",
+            "img" => "business/9",    
             "price" => 20,
-            "sizes" => array("Small","Medium","Large","X-Large")
+            "sizes" => array("200","400","600","800")
     );
     $products[130] = array(
-            "name" => "HTML5 Shirt, Teal",
-            "img" => "img/101.jpg",    
+            "name" => "Business Image Ten",
+            "img" => "business/10",    
             "price" => 22,
-            "sizes" => array("Small","Medium","Large","X-Large")
+            "sizes" => array("200","400","600","800")
     );
     $products[131] = array(
-            "name" => "Logo Shirt, Orange",
-            "img" => "img/101.jpg",    
+            "name" => "Cat Image One",
+            "img" => "cats/1",    
             "price" => 20,
-            "sizes" => array("Small","Medium","Large","X-Large")
+            "sizes" => array("200","400","600","800")
     );
     $products[132] = array(
-            "name" => "Mike the Frog Shirt, Red",
-            "img" => "img/101.jpg",    
+            "name" => "Cat Image Two",
+            "img" => "cats/2",    
             "price" => 25,
-            "sizes" => array("Small","Medium","Large","X-Large")
+            "sizes" => array("200","400","600","800")
     );     
 
     foreach ($products as $product_id => $product) {

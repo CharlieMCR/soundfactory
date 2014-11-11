@@ -24,7 +24,7 @@
                         <label for="name">Name</label>
                     </th>
                     <td>
-                                <input type="text" name="name" id="name" value="<?php if (isset($name)) { echo htmlspecialchars($name); } ?>">
+                        <input type="text" name="name" id="name" value="<?php if (isset($name)) { echo htmlspecialchars($name); } ?>">
                     </td>
                 </tr>
                 <tr>
