@@ -101,6 +101,11 @@ body {
     .wrapper .product-details {
       width: 46%;
       float: right; } }
+@media only screen and (min-width: 768px) {
+  .wrapper {
+    position: relative;
+    width: 768px;
+    margin: auto; } }
 
 /*header*/
 header {
@@ -121,13 +126,13 @@ header {
   zoom: 1; }
 
 h1.logo a {
-  color: #d8d8d8;
+  color: #ccc;
+  font-family: 'Vardana', sans-serif;
   text-decoration: none;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 1.2em;
   line-height: 22px;
-  float: left;
-  letter-spacing: 0.2em; }
+  float: left; }
 
 a.to_nav {
   float: right;
@@ -140,71 +145,69 @@ a.to_nav {
   line-height: 22px;
   height: 22px;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px; }
-  a.to_nav a.to_nav:hover,
-  a.to_nav a.to_nav:focus {
-    color: #1c1c1c;
-    background: #ccc; }
+  a.to_nav:hover, a.to_nav:focus {
+    color: #ccc;
+    background: #533; }
+  @media screen and (min-width: 768px) {
+    a.to_nav {
+      display: none; } }
 
 /*navigation*/
 #primary_nav ul {
   list-style: none;
   background: #533;
   padding: 5px 0; }
+@media screen and (min-width: 768px) {
+  #primary_nav li {
+    display: inline; }
+    #primary_nav li #top {
+      display: none; } }
 #primary_nav li a {
   display: block;
-  padding: 0 20px;
+  padding: 0 10px;
   color: #fff;
   text-decoration: none;
   font-weight: bold;
   letter-spacing: 0.1em;
   letter-spacing: 0.1em;
-  line-height: 2em;
-  height: 2em;
+  line-height: 2.5em;
   border-bottom: 1px solid #383838; }
   #primary_nav li a:hover, #primary_nav li a:focus {
     color: #1c1c1c;
     background: #ccc; }
   #primary_nav li a.on {
     text-decoration: underline; }
+  @media screen and (min-width: 768px) {
+    #primary_nav li a {
+      float: left;
+      border: none;
+      padding: 0 10px;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      border-radius: 2px; } }
 #primary_nav li:last-child a {
   border-bottom: none; }
-
-/*footer*/
-footer {
-  font-family: 'PT Serif', serif;
-  font-style: italic;
-  text-align: center;
-  font-size: 1em; }
-
-@media only screen and (min-width: 768px) {
-  a.to_nav {
-    display: none; }
-
-  .wrapper {
-    position: relative;
-    width: 768px;
-    margin: auto; }
-
+@media screen and (min-width: 768px) {
   #primary_nav {
     position: absolute;
     top: 5px;
     right: 10px;
-    background: none; }
+    background: none; } }
 
-  #primary_nav li {
-    display: inline; }
+/*footer*/
+footer {
+  display: block;
+  margin-top: 10%;
+  font-family: 'PT Serif', serif;
+  font-style: italic;
+  text-align: center;
+  font-size: 1em;
+  background: #ccc;
+  float: clear; }
 
-  #primary_nav li a {
-    float: left;
-    border: none;
-    padding: 0 10px;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px; } }
 .contact {
   width: 100%;
   display: none;

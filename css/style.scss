@@ -143,6 +143,11 @@ body {
             float: right;
         }
     }
+    @media only screen and (min-width: 768px) {
+        position: relative;
+        width: 768px;
+        margin: auto;
+    }
 }
  
 
@@ -154,30 +159,30 @@ header {
     padding: 15px 20px;
 }
  
-        /*shorter clearfix http://nicolasgallagher.com/micro-clearfix-hack/*/
-        header:before,
-        header:after {
-            content:"";
-            display:table;
-        }
-         
-        header:after {
-            clear:both;
-        }
-         
-        /* For IE 6/7 (trigger hasLayout) */
-        header {
-            zoom:1;
-        }
+/*shorter clearfix http://nicolasgallagher.com/micro-clearfix-hack/*/
+header:before,
+header:after {
+    content:"";
+    display:table;
+}
+ 
+header:after {
+    clear:both;
+}
+ 
+/* For IE 6/7 (trigger hasLayout) */
+header {
+    zoom:1;
+}
 
 h1.logo a {
-    color: $lightborder;
+    color: $light;
+    font-family: 'Vardana', sans-serif;
     text-decoration: none;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.2em;
     line-height: 22px;
     float: left;
-    letter-spacing: 0.2em;
 }
  
 a.to_nav {
@@ -191,15 +196,17 @@ a.to_nav {
     line-height: 22px;
     height: 22px;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     border-radius: 2px;
-    a.to_nav:hover,
-    a.to_nav:focus {
-    color: $black;
-    background: $light;
-}
+    &:hover,
+    &:focus {
+    color: $light;
+    background: $dark;
+    }
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
 }
  
 
@@ -212,16 +219,24 @@ a.to_nav {
     background: $dark;
     padding: 5px 0;
     }
+    li {
+        @media screen and (min-width: 768px) {
+            display: inline;
+            #top {
+            display: none;
+            }
+        }
+    }
     li a {
     display: block;
-    padding: 0 20px;
+    padding: 0 10px;
     color: $white;
     text-decoration: none;
     font-weight: bold;
     letter-spacing: 0.1em;
     letter-spacing: 0.1em;
-    line-height: 2em;
-    height: 2em;
+    line-height: 2.5em;
+    // height: 2em;
     border-bottom: 1px solid $grey;
     &:hover, &:focus {
         color: $black;
@@ -230,56 +245,37 @@ a.to_nav {
     &.on {
         text-decoration: underline;
     }
-    }
-    li:last-child a {
-    border-bottom: none;
-    }
-}
-// .on li a {
-//     color: pink;
-// }
- 
-/*footer*/
- 
-footer {
-    font-family: 'PT Serif', serif;
-    font-style: italic;
-    text-align: center;
-    font-size: 1em;
-}
-
-@media only screen and (min-width: 768px) {
- 
-    a.to_nav {
-        display: none;
-    }
-     
-    .wrapper {
-        position: relative;
-        width: 768px;
-        margin: auto;
-    }
-     
-    #primary_nav {
-        position: absolute;
-        top: 5px;
-        right: 10px;
-        background: none;
-    }
-     
-    #primary_nav li {
-        display: inline;
-    }
-     
-    #primary_nav li a {
+    @media screen and (min-width: 768px) {
         float: left;
         border: none;
         padding: 0 10px;
         -webkit-border-radius: 2px;
         -moz-border-radius: 2px;
         border-radius: 2px;
+        }
     }
+    li:last-child a {
+    border-bottom: none;
+    }
+    @media screen and (min-width: 768px) {
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        background: none;
+    }
+}
  
+/*footer*/
+ 
+footer {
+    display: block;
+    margin-top: 10%;
+    font-family: 'PT Serif', serif;
+    font-style: italic;
+    text-align: center;
+    font-size: 1em;
+    background: $light;
+    float: clear;
 }
 
 .contact {
