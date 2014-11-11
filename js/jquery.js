@@ -17,7 +17,6 @@ $overlay.append($caption);
 $("span a").click(function(event){
   event.preventDefault();
   var imageLocation = $('select option:selected').attr("value");
-  console.log(imageLocation);
   // Update overlay with the image linked in the link  
   $image.attr("src", imageLocation);
   $overlay.show();
